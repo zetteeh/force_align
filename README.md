@@ -8,3 +8,5 @@ Most of the code is very well explained here: [pytorch tutorial](https://pytorch
 ## Usage
 
 Install ```pip install -r requirements.txt```, and use ```python gernerate.py <filename.wav>```
+
+use ```ffmpeg -f lavfi -i color=c=black:s=1280x720:r=5 -i testaudio.wav -crf 0 -c:a aac -shortest -vf subtitles=caption.srt example_with_subtitiles.mp4``` to generate a video from voice with the generated subtitles 
